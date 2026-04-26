@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filtered Books</title>
+</head>
+<body>
+
+<h2>Filtered Books Per Publisher</h2>
+
+<table border="1">
+<tr>
+<th>Publisher</th>
+<th>Book Count</th>
+</tr>
+
+{% for p in publishers %}
+<tr>
+<td>{{ p.name }}</td>
+<td>{{ p.book_count }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

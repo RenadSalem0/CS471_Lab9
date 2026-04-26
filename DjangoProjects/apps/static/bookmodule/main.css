@@ -1,0 +1,82 @@
+/* ========= Task1 ========= */
+#box1, #box2, #box3{
+  padding: 30px;
+  text-align: center;
+}
+
+#box1{ background-color:#b8f5c6; }
+#box2{ background-color:#595959; }
+#box3{ background-color:#000; }
+
+#box1 a, #box2 a, #box3 a{
+  display:block;
+  padding:12px;
+  font-weight:bold;
+  text-decoration: underline;
+  border-radius: 10px;     
+  transition: 0.15s;       
+}
+
+#box1 a:link{ color:red; }
+#box2 a:link{ color:#ffd000; }
+#box3 a:link{ color:white; }
+
+#box1 a:visited{
+  color:#7a00cc;
+  font-size:20px;   
+}
+
+#box2 a:hover{
+  background:white;
+  color:black;
+  border:2px solid black;
+}
+
+#box3 a:active{
+  background:red;
+  color:yellow;
+}
+/* ===== Task 2 ===== */
+#fmtTitle{
+  color: green;
+  background-color: #f5f2df;
+  padding: 10px;
+  margin: 10px;
+}
+/* ===== Task 3 ===== */
+#listTitle{
+  background-color: #5f9ea0;
+  color: white;
+  padding: 12px;
+  margin: 10px;
+}
+.table2{
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.table2 th, .table2 td{
+  border: 1px solid black;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.bigHead{
+  font-size: 22px;
+  font-weight: bold;
+  height: 110px;   
+  vertical-align: middle;
+}
+
+.imgCell{
+  width: 310px;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.camelImg{
+  width: 280px;
+  height: auto;
+  display: block;
+}
+

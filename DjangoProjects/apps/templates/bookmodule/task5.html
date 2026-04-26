@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 5</title>
+</head>
+<body>
+
+    <h2>Publishers with Count of Highly Rated Books</h2>
+
+    <table border="1">
+        <tr>
+            <th>Publisher Name</th>
+            <th>Quantity</th>
+        </tr>
+
+        {% for p in publishers %}
+        <tr>
+            <td>{{ p.name }}</td>
+            <td>{{ p.quantity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

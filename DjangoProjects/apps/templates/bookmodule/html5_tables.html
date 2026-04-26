@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables</title>
+  <link rel="stylesheet" href="{% static 'bookmodule/main.css' %}">
+</head>
+<body>
+
+<table class="table1">
+  <caption>Table 1: Table<br>of Fruits and<br>Their Prices</caption>
+
+  <tr>
+    <th>Fruit</th>
+    <th>Price</th>
+  </tr>
+  <tr><td>Apple</td><td>$0.25</td></tr>
+  <tr><td>Orange</td><td>$0.50</td></tr>
+  <tr><td>Banana</td><td>$1.00</td></tr>
+  <tr><td>Pineapple</td><td>$2.00</td></tr>
+  <tr><th>Total</th><th>$3.75</th></tr>
+</table>
+
+<br><br>
+
+<table class="table2">
+  <caption>Table 2: A more complex sample table</caption>
+
+  <tr>
+    <td class="imgCell" rowspan="2">
+      <img src="{% static 'bookmodule/camel.jpg' %}" alt="camel" class="camelImg">
+    </td>
+    <th colspan="4" class="bigHead">
+      Camelid comparison<br>
+      Approximate as of 6/2011
+    </th>
+  </tr>
+
+  <tr>
+    <th># of humps</th>
+    <th>Indigenous region</th>
+    <th>Spits?</th>
+    <th>Produces wool?</th>
+  </tr>
+
+  <tr>
+    <th class="rowTitle">Dromedary</th>
+    <td>1</td>
+    <td>Arabian Peninsula</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <th class="rowTitle">Camels (bactrian)</th>
+    <td>2</td>
+    <td>Africa/Asia</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <th class="rowTitle">Llamas</th>
+    <td>1</td>
+    <td>Andes Mountains</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</table>
+
+</body>
+</html>

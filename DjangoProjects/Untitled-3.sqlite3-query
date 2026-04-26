@@ -1,0 +1,8 @@
+-- database: ./db.sqlite3
+
+SELECT * FROM bookmodule_student;
+INSERT INTO bookmodule_student (name, age, address_id) VALUES ('Ahmad', 21, 0);
+INSERT INTO bookmodule_student (name, age, address_id) VALUES ('Sara', 22, 1);
+INSERT INTO bookmodule_student (name, age, address_id) VALUES ('Mona', 20, 2);
+INSERT INTO bookmodule_student (name, age, address_id) VALUES ('Ali', 23, 3);
+INSERT INTO bookmodule_student (name, age, address_id) VALUES ('Renad', 23, 0);

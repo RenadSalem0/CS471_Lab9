@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oldest Book</title>
+</head>
+<body>
+
+    <h2>Oldest Book For Each Publisher</h2>
+
+    <table border="1">
+        <tr>
+            <th>Publisher</th>
+            <th>Oldest Publish Date</th>
+        </tr>
+
+        {% for p in publishers %}
+        <tr>
+            <td>{{ p.name }}</td>
+            <td>
+                {% if p.oldest_pubdate %}
+                    {{ p.oldest_pubdate|date:"Y-m-d" }}
+                {% else %}
+                    No books
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

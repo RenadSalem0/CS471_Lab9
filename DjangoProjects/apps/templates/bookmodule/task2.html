@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Publisher Stock</title>
+</head>
+<body>
+
+<h2>Publishers and Total Book Stock</h2>
+
+<table border="1">
+<tr>
+<th>Publisher</th>
+<th>Total Stock</th>
+</tr>
+
+{% for p in publishers %}
+<tr>
+<td>{{ p.name }}</td>
+<td>{{ p.stock_counter }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

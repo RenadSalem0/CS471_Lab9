@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students Per City</title>
+</head>
+<body>
+
+<h2>Number of Students in Each City</h2>
+
+<table border="1">
+    <tr>
+        <th>City</th>
+        <th>Number of Students</th>
+    </tr>
+
+    {% for city in cities %}
+    <tr>
+        <td>{{ city.city }}</td>
+        <td>{{ city.student_count }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

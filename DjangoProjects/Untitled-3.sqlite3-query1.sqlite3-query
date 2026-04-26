@@ -1,0 +1,93 @@
+-- database: ./db.sqlite3
+
+SELECT * FROM bookmodule_address;
+
+insert into bookmodule_publisher (name, location) values ('Kamba', 'Zürich');
+insert into bookmodule_publisher (name, location) values ('Photobug', 'Strzelce Krajeńskie');
+insert into bookmodule_publisher (name, location) values ('Yoveo', 'Sevsk');
+insert into bookmodule_publisher (name, location) values ('Quire', 'Mosteiro');
+insert into bookmodule_publisher (name, location) values ('Vimbo', 'Knurów');
+insert into bookmodule_publisher (name, location) values ('Eabox', 'Kendalngupuk');
+insert into bookmodule_publisher (name, location) values ('Devbug', 'Castro Daire');
+insert into bookmodule_publisher (name, location) values ('Topdrive', 'Cayna');
+insert into bookmodule_publisher (name, location) values ('Yambee', 'Vrsi');
+insert into bookmodule_publisher (name, location) values ('Aivee', 'Correntina');
+
+insert into bookmodule_author (name, DOB) values ('Kalvin Vernazza', '5/30/2025');
+insert into bookmodule_author (name, DOB) values ('Con Dundendale', '9/17/2025');
+insert into bookmodule_author (name, DOB) values ('Julietta Pitkethly', '3/9/2026');
+insert into bookmodule_author (name, DOB) values ('Domenic Trivett', '12/7/2025');
+insert into bookmodule_author (name, DOB) values ('Kinna Renshell', '1/8/2026');
+insert into bookmodule_author (name, DOB) values ('Ambrosius Baildon', '4/5/2026');
+insert into bookmodule_author (name, DOB) values ('Adriano Dannel', '3/28/2026');
+insert into bookmodule_author (name, DOB) values ('Gerianne Evans', '11/16/2025');
+insert into bookmodule_author (name, DOB) values ('Baxy Livingston', '5/13/2025');
+insert into bookmodule_author (name, DOB) values ('Gwenette Buckleigh', '6/2/2025');
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 78, 3, '6/27/2025', 8, 7);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 138, 2, '7/17/2025', 5, 6);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Donec semper sapien a libero. Nam dui.', 32, 4, '6/25/2025', 8, 2);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.', 110, 1, '1/13/2026', 4, 6);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.', 152, 5, '3/5/2026', 2, 8);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.', 130, 2, '6/11/2025', 3, 5);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.', 69, 4, '4/29/2025', 3, 1);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('In congue.', 73, 4, '1/10/2026', 6, 4);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl.', 56, 4, '12/16/2025', 7, 1);
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.', 58, 1, '5/20/2025', 7, 4);
+
+INSERT INTO bookmodule_book_authors (book_id, author_id) VALUES
+(1,1),(1,2),
+(2,3),(2,4),
+(3,5),(3,6),
+(4,7),(4,8),
+(5,9),(5,10),
+(6,1),(6,3),
+(7,2),(7,5),
+(8,4),(8,6),
+(9,7),(9,9),
+(10,8),(10,10);
+DELETE FROM bookmodule_book_authors;
+DELETE FROM bookmodule_book;
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 78, 3, '2025-06-27 00:00:00', 8, 7);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 138, 2, '2025-07-17 00:00:00', 5, 6);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Donec semper sapien a libero. Nam dui.', 32, 4, '2025-06-25 00:00:00', 8, 2);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.', 110, 1, '2026-01-13 00:00:00', 4, 6);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.', 152, 5, '2026-03-05 00:00:00', 2, 8);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.', 130, 2, '2025-06-11 00:00:00', 3, 5);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.', 69, 4, '2025-04-29 00:00:00', 3, 1);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('In congue.', 73, 4, '2026-01-10 00:00:00', 6, 4);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl.', 56, 4, '2025-12-16 00:00:00', 7, 1);
+
+insert into bookmodule_book (title, price, quantity, pubdate, rating, publisher_id) values ('Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.', 58, 1, '2025-05-20 00:00:00', 7, 4);
+INSERT INTO bookmodule_book_authors (book_id, author_id) VALUES
+(1,1),(1,2),
+(2,3),(2,4),
+(3,5),(3,6),
+(4,7),(4,8),
+(5,9),(5,10),
+(6,1),(6,3),
+(7,2),(7,5),
+(8,4),(8,6),
+(9,7),(9,9),
+(10,8),(10,10);
+SELECT id FROM bookmodule_book;
+SELECT id FROM bookmodule_author;
+INSERT INTO bookmodule_book_authors (book_id, author_id) VALUES
+(17,1),(17,2),
+(19,3),(19,4),
+(13,5),(13,6),
+(18,7),(18,8),
+(20,9),(20,10),
+(16,1),(16,3),
+(12,2),(12,5),
+(14,4),(14,6),
+(11,7),(11,9),
+(15,8),(15,10);

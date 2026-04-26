@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Prices</title>
+</head>
+<body>
+
+<h2>Average, Min and Max Book Prices</h2>
+
+<table border="1">
+<tr>
+<th>Publisher</th>
+<th>Average</th>
+<th>Minimum</th>
+<th>Maximum</th>
+</tr>
+
+{% for p in publishers %}
+<tr>
+<td>{{ p.name }}</td>
+<td>{{ p.avg_price }}</td>
+<td>{{ p.min_price }}</td>
+<td>{{ p.max_price }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
